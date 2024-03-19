@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-namespace ValidadorCPF;
+﻿namespace ValidadorCPF;
 class Program
 {
     static void Main(string[] args)
@@ -18,6 +16,7 @@ class Program
 
         CPF cpf = new(_cpf);
         var resultado = cpf.ValidarCPF();
+        Console.WriteLine("");
         Console.WriteLine(resultado);
         Console.WriteLine("Aperte qualquer tecla para realizar uma nova consulta.");
         Console.ReadKey();
